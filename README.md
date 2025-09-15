@@ -3,8 +3,7 @@
 Projeto desenvolvido para a disciplina **Design Patterns & Clean Code**.
 
 ## 👥 Integrantes
-- Nome do Aluno 1 — RA XXXXX
-- Nome do Aluno 2 — RA XXXXX
+- Luigi Gabriel — RA 2009016
 
 ## 📌 Objetivo
 Simular um carrinho de compras simples em PHP, aplicando boas práticas de código:
