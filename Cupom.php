@@ -7,7 +7,7 @@ Namespace Src;
 Class Cupom
 {
     Private string $codigo;
-    Private float $desconto; // em porcentagem, ex: 0.1 = 10%
+    Private float $desconto;
 
     Public function __construct(string $codigo, float $desconto)
     {
@@ -25,3 +25,4 @@ Class Cupom
         Return $valor – ($valor * $this->desconto);
     }
 }
+
