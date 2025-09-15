@@ -6,7 +6,7 @@ namespace Src;
 
 class Carrinho
 {
-    private array $itens = []; // cada item será ['produto' => Produto, 'quantidade' => int, 'subtotal' => float]
+    private array $itens = [];
 
     public function adicionarItem(Produto $produto, int $quantidade): string
     {
@@ -24,7 +24,7 @@ class Carrinho
             }
         }
 
-        // Se não existe, adiciona novo
+        
         $this->itens[] = [
             'produto' => $produto,
             'quantidade' => $quantidade,
@@ -44,7 +44,7 @@ class Carrinho
                 );
 
                 unset($this->itens[$index]);
-                $this->itens = array_values($this->itens); // reorganiza os índices
+                $this->itens = array_values($this->itens); 
 
                 return "Produto removido do carrinho.\n";
             }
@@ -82,3 +82,4 @@ class Carrinho
         return $cupom->aplicarDesconto($this->calcularTotal());
     }
 }
+
